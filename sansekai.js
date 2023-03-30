@@ -102,7 +102,7 @@ Membuat gambar dari teks`)
           });
             m.reply(`${response.data.choices[0].text}`);*/
             const response = await openai.createChatCompletion({
-          model: "gpt-3.5-turbo",
+          model: "gpt-4",
           messages: [{role: "user", content: text}],
           });
           m.reply(`${response.data.choices[0].message.content}`);
